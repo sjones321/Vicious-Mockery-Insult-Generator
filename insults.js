@@ -1,6 +1,7 @@
 const insults = {
 // Basic Categories
 classic: [
+	"You aren't your best friends best friend",
 	"You're as sharp as a marble and twice as dense.",
 	"Your wit's so slow, it takes you an hour to cook minute rice.",
 	"You're about as useful as a chocolate teapot in a dragon's hoard.",
