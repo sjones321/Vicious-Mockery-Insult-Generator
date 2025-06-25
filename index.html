@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vicious Mockery Insult Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1a1a1a;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .insult-category {
+      margin-bottom: 30px;
+      background: #222;
+      border-radius: 8px;
+      padding: 15px 20px;
+      box-shadow: 0 0 8px #444;
+    }
+    .insult-category h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  background: #444;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #eee;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+  flex: 0 0 180px; /* increased width */
+  min-height: 48px; /* uniform height */
+  text-transform: capitalize;
+  user-select: none;
+  white-space: normal; /* allow wrapping */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: #666;
+}
+    #output {
+      margin-top: 40px;
+      background: #111;
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 140px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      white-space: pre-line; /* respects line breaks */
+      box-shadow: inset 0 0 8px #222;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vicious Mockery Insult Generator</h1>
+
+    <div class="insult-category">
+      <h2>Basic Insults</h2>
+      <div class="button-group">
+        <button onclick="generateInsults('classic')">Classic</button>
+        <button onclick="generateInsults('performance')">Performance</button>
+        <button onclick="generateInsults('age_young')">Age: Young</button>
+        <button onclick="generateInsults('age_middle')">Age: Middle</button>
+        <button onclick="generateInsults('age_old')">Age: Old</button>
+        <button onclick="generateInsults('gender_male')">Gender: Male</button>
+        <button onclick="generateInsults('gender_female')">Gender: Female</button>
+        <button onclick="generateInsults('gender_nonbinary')">Gender: Non-Binary</button>
+      </div>
+    </div>
+
+    <div class="insult-category">
+      <h2>Playable Races</h2>
+      <div class="button-group">
+        <button onclick="generateInsults('dragonborn')">Dragonborn</button>
+        <button onclick="generateInsults('dwarf')">Dwarf</button>
+        <button onclick="generateInsults('elf')">Elf</button>
+        <button onclick="generateInsults('gnome')">Gnome</button>
+        <button onclick="generateInsults('halfelf')">Half-Elf</button>
+        <button onclick="generateInsults('halfling')">Halfling</button>
+        <button onclick="generateInsults('halforc')">Half-Orc</button>
+        <button onclick="generateInsults('human')">Human</button>
+        <button onclick="generateInsults('tiefling')">Tiefling</button>
+        <button onclick="generateInsults('changeling')">Changeling</button>
+        <button onclick="generateInsults('warforged')">Warforged</button>
+      </div>
+    </div>
+
+    <div class="insult-category">
+      <h2>Class</h2>
+      <div class="button-group">
+        <button onclick="generateInsults('barbarian')">Barbarian</button>
+        <button onclick="generateInsults('bard')">Bard</button>
+        <button onclick="generateInsults('cleric')">Cleric</button>
+        <button onclick="generateInsults('druid')">Druid</button>
+        <button onclick="generateInsults('fighter')">Fighter</button>
+        <button onclick="generateInsults('monk')">Monk</button>
+        <button onclick="generateInsults('paladin')">Paladin</button>
+        <button onclick="generateInsults('ranger')">Ranger</button>
+        <button onclick="generateInsults('rogue')">Rogue</button>
+        <button onclick="generateInsults('sorcerer')">Sorcerer</button>
+        <button onclick="generateInsults('warlock')">Warlock</button>
+        <button onclick="generateInsults('wizard')">Wizard</button>
+      </div>
+    </div>
+
+    <div class="insult-category">
+      <h2>Creature Types</h2>
+      <div class="button-group">
+        <button onclick="generateInsults('aberration')">Aberration</button>
+        <button onclick="generateInsults('beast')">Beast</button>
+        <button onclick="generateInsults('celestial')">Celestial</button>
+        <button onclick="generateInsults('construct')">Construct</button>
+        <button onclick="generateInsults('dragon')">Dragon</button>
+        <button onclick="generateInsults('elemental')">Elemental</button>
+        <button onclick="generateInsults('fiend')">Fiend</button>
+        <button onclick="generateInsults('giant')">Giant</button>
+        <button onclick="generateInsults('humanoid')">Humanoid</button>
+        <button onclick="generateInsults('monstrosity')">Monstrosity</button>
+        <button onclick="generateInsults('ooze')">Ooze</button>
+        <button onclick="generateInsults('plant')">Plant</button>
+        <button onclick="generateInsults('undead')">Undead</button>
+      </div>
+    </div>
+
+    <div class="insult-category">
+      <h2>Special</h2>
+      <div class="button-group">
+        <button onclick="generateInsults('avernus')">Avernus</button>
+      </div>
+    </div>
+
+    <div id="output">Click a button above to generate insults!</div>
+  </div>
+
+  <script src="insults.js"></script>
+  <script>
+    function generateInsults(category) {
+      const output = document.getElementById('output');
+      if (!insults[category]) {
+        output.textContent = 'No insults available for category: ' + category;
+        return;
+      }
+      const allInsults = insults[category];
+      let chosen = [];
+      while (chosen.length < 3 && chosen.length < allInsults.length) {
+        const pick = allInsults[Math.floor(Math.random() * allInsults.length)];
+        if (!chosen.includes(pick)) chosen.push(pick);
+      }
+      let formatted = chosen.map((insult, i) => `${i + 1}. ${insult}`).join('\n\n');
+      output.textContent = formatted;
+    }
+  </script>
+</body>
+</html>
