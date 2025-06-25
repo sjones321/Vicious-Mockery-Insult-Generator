@@ -689,6 +689,30 @@ const insults = {
     "Your bolts are looser than your grip.",
     "You’re a pile of scrap pretending to be a warrior."
   ],
+  goliath: [
+  "You’re about as useful as a burnt-out torch in the Blood War.",
+  "Even the devils avoid your sorry excuse for a pact.",
+  "You fumble like a mortal lost in the Nine Hells.",
+  "Your courage melts faster than a soul in Avernus heat.",
+  "You’ve got less bite than a charred skeleton.",
+  "Your wit’s as twisted as the River Styx, and twice as dead.",
+  "You stumble through hell like a lost commoner, not a hero.",
+  "Your infernal contracts are as empty as your threats.",
+  "You’re a footnote in the infernal bureaucracy.",
+  "The legions of Avernus would rather face you than your insults."
+  ],
+  aasimar: [
+  "You’re about as useful as a burnt-out torch in the Blood War.",
+  "Even the devils avoid your sorry excuse for a pact.",
+  "You fumble like a mortal lost in the Nine Hells.",
+  "Your courage melts faster than a soul in Avernus heat.",
+  "You’ve got less bite than a charred skeleton.",
+  "Your wit’s as twisted as the River Styx, and twice as dead.",
+  "You stumble through hell like a lost commoner, not a hero.",
+  "Your infernal contracts are as empty as your threats.",
+  "You’re a footnote in the infernal bureaucracy.",
+  "The legions of Avernus would rather face you than your insults."
+  ],
   avernus: [
   "You’re about as useful as a burnt-out torch in the Blood War.",
   "Even the devils avoid your sorry excuse for a pact.",
