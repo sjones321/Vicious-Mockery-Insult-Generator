@@ -1,730 +1,684 @@
 const insults = {
-  // Existing class categories remain untouched...
-
-  // Add full category support for all original sections
+  // Basic Categories
   classic: [
-    "You're as sharp as a marble.",
+    "You're as sharp as a marble and twice as dense.",
     "Your wit's so slow, it takes you an hour to cook minute rice.",
-    "You're about as useful as a screen door on a submarine.",
-    "You bring everyone down to your level — and that’s tragic.",
-    "Your brain’s on vacation but your mouth is working overtime.",
-    "You're a walking contradiction wrapped in a disaster.",
-    "You have the charisma of a damp rag.",
-    "If ignorance is bliss, you must be the happiest person alive.",
-    "You have the grace of a drunk kobold.",
-    "Your presence inspires nothing but pity."
+    "You're about as useful as a chocolate teapot in a dragon's hoard.",
+    "You bring everyone down to your level—and that's a tragic place to be.",
+    "Your brain's on permanent vacation but your mouth never stops working.",
+    "You're a walking contradiction wrapped in a disaster, tied with failure.",
+    "You have the charisma of a damp rag soaked in disappointment.",
+    "If ignorance is bliss, you must be the happiest fool in the multiverse.",
+    "You have all the grace of a drunk kobold in a pottery shop.",
+    "Your presence inspires nothing but pity and secondhand embarrassment."
   ],
 
   performance: [
-    "You sound like a cat strangling a bagpipe.",
-    "Your rhythm's so bad even goblins cover their ears.",
-    "You couldn't carry a tune if it was a bag of rocks.",
-    "Your voice could clear a tavern in seconds.",
-    "You play with all the passion of a sleeping snail.",
-    "Your songs are the reason bards are feared.",
-    "Even the local rats stop to cringe at your performance.",
-    "Your dancing is more dangerous than a pit trap.",
-    "You’d make a statue weep — from embarrassment.",
-    "Your lute’s begging for mercy."
+    "You sound like a cat strangling a bagpipe in a thunderstorm.",
+    "Your rhythm's so bad even tone-deaf goblins cover their ears.",
+    "You couldn't carry a tune if it came with handles and instructions.",
+    "Your voice could clear a packed tavern faster than a fire spell.",
+    "You play with all the passion of a sleeping slug.",
+    "Your songs are the reason bards have a bad reputation.",
+    "Even the tavern rats flee when you start performing.",
+    "Your dancing is more hazardous than a gelatinous cube.",
+    "You'd make a stone gargoyle weep—from sheer embarrassment.",
+    "Your lute filed a restraining order against your fingers."
   ],
 
   age_young: [
-    "You’ve got the energy of a kitten with a caffeine addiction — but none of the charm.",
-    "Your wisdom is still buffering.",
-    "You’re a baby dragon with paper wings.",
-    "You’re so young, your armor is still wet behind the ears.",
-    "Your youthful arrogance is almost cute — almost.",
-    "You’re a fledgling trying to roar with the big beasts.",
-    "You stumble through life like a toddler learning to walk.",
-    "You’ve got the tact of a goblin who just found a shiny rock.",
-    "You’re a sapling pretending to be an oak.",
-    "Your experience points are still in tutorial mode."
+    "You've got the energy of a caffeinated pixie but none of the wisdom.",
+    "Your experience bar is still loading—very slowly.",
+    "You're a baby dragon with paper wings and delusions of grandeur.",
+    "Your armor's still got the price tags on it, doesn't it?",
+    "Your youthful arrogance would be cute if it weren't so pathetic.",
+    "You're a fledgling trying to soar with eagles and failing spectacularly.",
+    "You stumble through adventures like a toddler in platemail.",
+    "You've got the tactical awareness of a goblin with a shiny rock.",
+    "You're a sapling pretending to be an ancient oak—and fooling no one.",
+    "Your character sheet looks like it was filled out in crayon."
   ],
 
   age_middle: [
-    "You’re at the age where your best days are behind you, but your worst haven’t caught up yet.",
-    "You’re the human equivalent of slightly stale bread.",
-    "You’re old enough to know better, but young enough to do it anyway — badly.",
-    "Your midlife crisis is showing — and it’s embarrassing.",
-    "You’ve got the enthusiasm of a bard who forgot their lute.",
-    "You’re stuck between ‘veteran’ and ‘has-been’ with no clear path forward.",
-    "You’re like a warhorse past its prime, but still expected to perform.",
-    "Your prime time was prime time ago.",
-    "You’re a relic desperately clinging to relevance.",
-    "You’ve aged like a half-drunk bottle of bad mead."
+    "You're at that awkward age where your best days mock your current ones.",
+    "You're the adventuring equivalent of stale tavern bread—past your prime.",
+    "You're old enough to know better but young enough to fail anyway.",
+    "Your midlife crisis armor is showing, and it's not flattering.",
+    "You've got the enthusiasm of a bard who forgot their instrument at home.",
+    "You're stuck between 'experienced' and 'washed up' with no map out.",
+    "You're like a war horse past its prime but too stubborn to retire.",
+    "Your glory days are behind you—way behind you.",
+    "You're desperately clinging to relevance like a barnacle on a sinking ship.",
+    "You've aged like cheap wine—poorly and with regret."
   ],
 
   age_old: [
-    "You’re so old, your first sword was made of stone.",
-    "Your breath smells like the crypt you’ll soon be in.",
-    "You’ve got more dust than a forgotten tomb.",
-    "Your memory is like a sieve with holes the size of boulders.",
-    "You’re ancient enough to have fought in wars nobody remembers.",
-    "You move slower than a glacier on a hot day.",
-    "Your wrinkles have wrinkles, and those wrinkles have apprentices.",
-    "You’re the reason skeletons look youthful.",
-    "You’re old enough to have been a bad influence on the first adventurers.",
-    "Your wisdom is as faded as your eyesight."
+    "You're so ancient, your first sword was carved from dinosaur bone.",
+    "Your breath smells like the tomb you're destined for.",
+    "You've collected more dust than a forgotten library.",
+    "Your memory has more holes than a giant's fishing net.",
+    "You're old enough to have given advice to legendary heroes—bad advice.",
+    "You move with all the speed of continental drift.",
+    "Your wrinkles have achieved their own geological status.",
+    "You make skeletons look youthful and vibrant by comparison.",
+    "You were ancient when the gods were still taking apprenticeships.",
+    "Your wisdom is as faded as your eyesight and twice as useless."
   ],
 
   gender_male: [
-    "You’ve got the charm of a rusted sword handle.",
-    "You strut like a rooster with no feathers.",
-    "Your courage is as flimsy as wet parchment.",
-    "You talk big but your actions are all bark.",
-    "You’re a shadow trying to play a hero.",
-    "Your beard is patchier than your excuses.",
-    "You swing your ego like a broken axe.",
-    "You’re all grunt and no brains.",
-    "You’re about as intimidating as a stuffed bear.",
-    "Your roar sounds like a kitten's meow."
+    "You strut like a peacock with molting feathers.",
+    "Your machismo is compensating for everything you lack.",
+    "You talk tough but fight like you're swatting flies.",
+    "Your beard can't hide your weak jawline or weaker character.",
+    "You flex muscles you don't have to impress people who don't care.",
+    "Your roar sounds like a kitten asking for milk.",
+    "You swing your sword like you're afraid it might swing back.",
+    "Your bravado crumbles faster than a stale biscuit.",
+    "You're all bluster and no backbone.",
+    "Your ego writes checks your abilities can't cash."
   ],
 
   gender_female: [
-    "You sparkle like cheap fairy dust — and just as irritating.",
-    "You try to be the queen but act like a jester.",
-    "Your whispers are less secrets, more noise.",
-    "You toss your hair like it’ll solve your problems.",
-    "You’ve got the grace of a troll in heels.",
-    "You wield drama like a broken wand.",
-    "You’re all sugar and sour with none of the sweet.",
-    "Your smile hides a clumsy disaster.",
-    "You’re a tempest in a teacup — and a messy one at that.",
-    "Your charm’s as subtle as a fireball in a library."
+    "You sparkle like fool's gold—pretty but worthless.",
+    "Your drama could power a small kingdom's theater district.",
+    "You wield charm like a broken wand—ineffectively.",
+    "Your smile hides all the competence you're missing.",
+    "You flutter around problems instead of solving them.",
+    "Your grace is as artificial as your confidence.",
+    "You're sugar-coated poison with a side of disappointment.",
+    "Your beauty is only matched by your complete lack of substance.",
+    "You bat your eyelashes like they'll solve your problems—they won't.",
+    "You're a tempest in a teacup, and the teacup is cracked."
   ],
 
   gender_nonbinary: [
-    "You defy categories like a puzzle missing pieces.",
-    "You change more often than a bard’s tune.",
-    "You’re a walking enigma wrapped in chaos.",
-    "You’re like a riddle no one wants to solve.",
-    "Your identity is as shifting as a mirage.",
-    "You confuse even the wisest sages.",
-    "You’re the wildcard that nobody bets on.",
-    "You’re as unpredictable as a rogue’s blade.",
-    "You’re a spectrum with the brightness turned way down.",
-    "You’re the question mark at the end of a bad joke."
+    "You defy categories like a riddle no one wants to solve.",
+    "Your identity shifts more than a doppelganger with commitment issues.",
+    "You're a walking question mark in search of a decent answer.",
+    "You confuse enemies and allies equally—mostly through incompetence.",
+    "Your unpredictability would be an asset if it weren't so random.",
+    "You're the wildcard that everyone wishes they could discard.",
+    "You transcend boundaries mostly by stumbling through them.",
+    "You're fluid like water—and just as likely to leak everywhere.",
+    "Your complexity is admirable; your execution is not.",
+    "You're the exception that proves every rule has loopholes."
   ],
+
+  // Ability Score Insults
   str: [
-    "You flex like a wet rope.",
-    "Your biceps look like noodles on rest day.",
-    "You lift morale—and that’s it.",
-    "You’ve skipped more arm days than thoughts.",
-    "A goblin could bench more than you.",
-    "You’re not strong. Just loud.",
-    "You throw punches like love taps.",
-    "You lift with your back, not your brain.",
-    "You break more bones than expectations.",
-    "You're the reason strength checks fail."
+    "You flex like a wet noodle in a hurricane.",
+    "Your biceps are purely decorative—and not very decorative at that.",
+    "You lift spirits because you certainly can't lift anything else.",
+    "A sickly halfling could arm-wrestle you into submission.",
+    "Your muscles are as mythical as your combat effectiveness.",
+    "You throw punches like you're underwater and wearing mittens.",
+    "Your strength is so legendary—in that it's completely fictional.",
+    "You break more promises than bones in combat.",
+    "Your power is inversely proportional to your actual strength.",
+    "You're living proof that size doesn't matter—neither does strength, apparently."
   ],
-  
+
   dex: [
-    "Your reflexes are as sharp as a melted spoon.",
-    "You trip over shadows.",
-    "Your agility is mythical—in that it's not real.",
-    "Even statues dodge better.",
-    "Your stealth is a series of apologies.",
-    "You tumble like a sack of potatoes.",
-    "You’re a blur—in the worst direction.",
-    "You dodge like you're magnetized to pain.",
-    "Even slimes are more coordinated.",
-    "Your finesse is a fantasy."
+    "Your reflexes are slower than a hibernating bear.",
+    "You trip over shadows and apologize to the ground.",
+    "Your agility is an elaborate practical joke the gods are playing.",
+    "You dodge attacks by accidentally falling into them.",
+    "Your stealth consists of a series of loud apologies.",
+    "You move with all the grace of a landslide in platemail.",
+    "Your nimbleness is purely theoretical—very theoretical.",
+    "You fumble so consistently it's almost a talent.",
+    "Your coordination is what happens when chaos meets incompetence.",
+    "You make statues look positively acrobatic by comparison."
   ],
-  
+
   con: [
-    "You faint during wind gusts.",
-    "You catch colds from warm soup.",
-    "Your constitution is imaginary.",
-    "You’re one hit away from unconsciousness.",
-    "Your blood type is 'fragile'.",
-    "You’re the tank nobody wants.",
-    "You sweat from standing.",
-    "Your immune system issued a resignation.",
-    "Even potions avoid healing you.",
-    "You're allergic to resilience."
+    "You're frailer than parchment in a rainstorm.",
+    "Your constitution was clearly an afterthought in your creation.",
+    "You get winded from passionate speeches about your own weakness.",
+    "Your immune system filed for unemployment years ago.",
+    "You're one strong breeze away from total collapse.",
+    "Your stamina makes glass look durable.",
+    "You catch diseases that haven't been discovered yet.",
+    "Your heartbeat sounds like a stuttering sparrow.",
+    "You're allergic to physical exertion and mental effort.",
+    "Your blood type is 'barely there' with a splash of 'questionable'."
   ],
-  
+
   int: [
-    "You couldn’t spell ‘arcane’ with a dictionary.",
-    "Even your thoughts have typos.",
-    "You’re outwitted by rocks.",
-    "Books fear your touch.",
-    "Your IQ is an urban legend.",
-    "You ask which end of a wand is dangerous.",
-    "You confuse scrolls with toilet paper.",
-    "Your best idea was silence.",
-    "You need CliffNotes for your own backstory.",
-    "You critically fail at thinking."
+    "You couldn't spell 'intelligence' if it was tattooed on your forehead.",
+    "Your thoughts move slower than a philosophical zombie.",
+    "You make rocks seem scholarly by comparison.",
+    "Your brain operates on a part-time schedule—very part-time.",
+    "You couldn't find your way out of a paper bag with a map and guide.",
+    "Your intellect is what happens when wisdom goes on permanent vacation.",
+    "You think deep thoughts—unfortunately, they're puddle-deep.",
+    "Your IQ could be expressed as a negative number and still be too generous.",
+    "You're proof that consciousness is just a suggestion, not a requirement.",
+    "Your mind is a steel trap—rusted shut and forgotten in a basement."
   ],
-  
+
   wis: [
-    "Your insight reads like a blank scroll.",
-    "You trust mimics twice.",
-    "Even your gut says 'don’t ask me'.",
-    "Your perception modifier is crying.",
-    "You ask hags for directions.",
-    "You see illusions and tip your hat.",
-    "You can't find your own motivation.",
-    "Your sense of danger is romantic.",
-    "You're the cautionary tale.",
-    "Even a divination spell can’t help you."
+    "Your insight reads like a blank scroll written in invisible ink.",
+    "You have the perception of a blindfolded mole in a sensory deprivation chamber.",
+    "Your wisdom is what happens when experience meets a brick wall.",
+    "You couldn't find water in an ocean with a diving bell.",
+    "Your intuition is about as reliable as a chocolate sword.",
+    "You mistake obvious traps for welcome mats on a regular basis.",
+    "Your judgment is so poor, even bad decisions feel sorry for you.",
+    "You have the street smarts of a sheltered houseplant.",
+    "Your awareness operates on a 'need to never know' basis.",
+    "You're so oblivious, you make blindness look perceptive."
   ],
-  
+
   cha: [
-    "Your charm is aggressively optional.",
-    "You flatter like a tax audit.",
-    "Even zombies ignore your presence.",
-    "You inspire silence.",
-    "You seduce like a wet sock.",
-    "Your presence lowers diplomacy checks.",
-    "You could bore a succubus.",
-    "You're as persuasive as spoiled meat.",
-    "You make mirrors flinch.",
-    "Your aura screams 'awkward'."
+    "Your charm is as appealing as a rotting fish in summer heat.",
+    "You have the social grace of a rabid owlbear at a tea party.",
+    "Your personality has all the magnetism of wet leather.",
+    "You inspire others—to leave the room as quickly as possible.",
+    "Your presence lowers the collective charisma of everyone nearby.",
+    "You could make a succubus take a vow of celibacy.",
+    "Your smooth talk sounds like sandpaper on a chalkboard.",
+    "You're as persuasive as a tax collector at a funeral.",
+    "Your charisma is so low, mirrors refuse to reflect you.",
+    "You make social awkwardness look like a refined art form."
   ],
-  
+
+  // Creature Type Insults
   undead: [
-    "I've seen skeletons with more backbone than you.",
-    "You're so lifeless, even zombies call you dull.",
-    "You moan like a banshee with laryngitis.",
-    "Your presence raises more groans than the dead.",
-    "Even necromancers refuse to reanimate you.",
-    "You're more decay than danger.",
-    "The only thing scary about you is your fashion sense.",
-    "You shamble like you're tripping on your own grave.",
-    "You're not undead—just unpleasant.",
-    "Even ghosts think you're transparent."
+    "You're so lifeless, even zombies find you boring.",
+    "Your shambling makes other undead embarrassed to be dead.",
+    "You smell worse than a ghoul's dinner leftovers.",
+    "Even necromancers think twice before raising something like you.",
+    "You're what happens when death itself makes a mistake.",
+    "Your moaning is less terrifying, more irritating.",
+    "You're the reason people aren't afraid of the undead anymore.",
+    "Your existence is an insult to the concept of unlife.",
+    "You make vampires consider switching to holy water.",
+    "Even other undead cross to the other side of the street to avoid you."
   ],
-  
+
   fiend: [
-    "You're the least infernal thing since angelic tea time.",
-    "Even imps laugh at your evil ambitions.",
-    "You have the menace of a soggy matchstick.",
-    "You're what Hell sends when it's feeling passive-aggressive.",
-    "I've met cultists more intimidating than you.",
-    "Your evil laugh sounds like a hiccup.",
-    "You're more irritation than damnation.",
-    "Even contracts with you come with an escape clause.",
-    "You're the fine print no one reads.",
-    "Your horns must be compensating."
+    "You're the disappointment Hell sends when it's feeling passive-aggressive.",
+    "Your evil is so mediocre, even imps file complaints.",
+    "You have all the menace of a strongly worded letter from the afterlife.",
+    "Your infernal nature got lost in translation—and shipping.",
+    "You're what happens when damnation comes with a money-back guarantee.",
+    "Your wickedness is more 'mildly inconvenient' than 'terrifyingly evil'.",
+    "You're the participation trophy of the demonic hierarchy.",
+    "Your corruption is so weak, it couldn't spoil milk.",
+    "You make lawful good paladins question if evil is even real.",
+    "Your dark powers are more like dimly lit suggestions."
   ],
-  
-  devil: [
-    "You negotiate like a spoiled child.",
-    "Even your brimstone smells weak.",
-    "You’re Hell’s least valuable intern.",
-    "You tempt like stale bread.",
-    "Your pacts are written in crayon.",
-    "You're the devil's idea of a prank.",
-    "You got demoted from tormentor to paper pusher.",
-    "Even soul collectors pass you by.",
-    "You wouldn't recognize subtle evil with a guide.",
-    "You're Hell's version of a pothole."
-  ],
-  
-  demon: [
-    "You rage like a toddler denied dessert.",
-    "You’re chaos in the form of inconvenience.",
-    "Even other demons plug their ears when you roar.",
-    "You're the footnote of the Abyss.",
-    "You destroy like a confused squirrel.",
-    "You're fury without focus—just noise.",
-    "Your tantrums could be outperformed by goats.",
-    "The Abyss forgot to give you menace.",
-    "You're the demonic equivalent of a stubbed toe.",
-    "Even balors ask you to leave."
-  ],
-  
+
   celestial: [
-    "You shine like a cracked lantern.",
-    "You're divine like expired fruit.",
-    "Even blessings recoil from you.",
-    "You inspire about as much hope as a tax collector.",
-    "Your halo’s slipping—and not in a good way.",
-    "You're the afterthought of heaven.",
-    "You radiate righteousness like a damp sock.",
-    "Even angels whisper insults behind your wings.",
-    "You're celestial in the way barnacles are nautical.",
-    "You're the footnote in holy scripture."
+    "Your halo slipped and fell off—probably for the best.",
+    "You radiate holiness like a broken lamp radiates light—barely and poorly.",
+    "Your divine nature must have gotten lost in the mail.",
+    "You're what happens when heaven settles for 'good enough'.",
+    "Your righteousness is as convincing as a tiefling preacher.",
+    "You glow with all the divine majesty of a dying firefly.",
+    "Your blessing feels more like a mild suggestion from above.",
+    "You're the clearance rack angel no one wanted to buy.",
+    "Your wings are purely ornamental—like your moral authority.",
+    "You make other celestials wonder if they're in the wrong business."
   ],
-  
+
   beast: [
-    "You snarl like a confused housecat.",
-    "You fight like a declawed squirrel.",
-    "You’re the runt of a litter of disappointments.",
-    "Even fleas refuse to bite you.",
-    "You're all bark, no bite—and not even much bark.",
-    "You run like you're late for nap time.",
-    "I've seen stuffed animals scarier than you.",
-    "You’d get outwitted by your own tail.",
-    "You’d be adorable—if you weren’t pathetic.",
-    "Even druid scouts pass you by."
+    "You have all the predatory instincts of a domesticated hamster.",
+    "Your roar sounds like a kitten with a head cold.",
+    "You're the runt of a litter that should never have been born.",
+    "Your hunting skills make vegetarian rabbits look fierce.",
+    "You're about as wild as a goldfish in a teacup.",
+    "Your natural instincts apparently include 'fail spectacularly'.",
+    "You make house cats look like apex predators.",
+    "Your pack rejected you for lowering the average intelligence.",
+    "You're what evolution would undo if it had an eraser.",
+    "Your survival instincts are apparently optional equipment."
   ],
-  
+
   dragon: [
-    "You hoard failure.",
-    "Your breath weapon is just bad breath.",
-    "You couldn’t intimidate a kobold.",
-    "You fly like you’re trying not to be noticed.",
-    "Your scales are more rust than regal.",
-    "You’re not ancient—you’re obsolete.",
-    "Even hatchlings laugh behind your wings.",
-    "Your roar sounds like a snore.",
-    "You guard treasure like it's a chore.",
-    "You're a wyrm with worms."
+    "Your hoard consists entirely of participation trophies and regret.",
+    "You breathe fire like a broken bellows—mostly smoke and disappointment.",
+    "Your scales are duller than a politician's campaign promises.",
+    "You fly with all the grace of a falling boulder with delusions.",
+    "Your roar inspires more pity than terror in local villages.",
+    "You're the reason kobolds have trust issues with their 'masters'.",
+    "Your treasure room is just an empty cave with an echo problem.",
+    "You make wyrmlings look ancient and wise by comparison.",
+    "Your draconic pride is built on a foundation of sand and wishful thinking.",
+    "You're living proof that not all dragons are created equal—or competent."
   ],
-  
+
   aberration: [
-    "You're what nightmares file complaints about.",
-    "Even madness avoids your logic.",
-    "You look like chaos sneezed.",
-    "You're proof psionics can rot taste.",
-    "You're strange—but not in the good way.",
-    "You make beholders look balanced.",
-    "Even the Far Realm says you're too weird.",
-    "You exist outside logic—and usefulness.",
-    "You’re the scribble in a book of horrors.",
-    "You’re the least flattering mutation."
+    "You're what nightmares have when they want to feel better about themselves.",
+    "Your existence violates several laws of nature—and good taste.",
+    "You make other aberrations question their life choices.",
+    "Your alien intelligence is emphasis on 'alien,' light on 'intelligence'.",
+    "You're a cosmic joke that forgot to be funny.",
+    "Your otherworldly nature is more 'other-worthless'.",
+    "You bend reality around you—mostly by being too dense to notice it.",
+    "Your sanity-blasting presence mostly just causes mild headaches.",
+    "You're the reason the Far Realm has quality control issues.",
+    "Your tentacles are the least disturbing thing about you."
   ],
-  
+
   construct: [
-    "Your gears grind louder than your thoughts.",
-    "You're powered by disappointment.",
-    "You were built broken.",
-    "Even artificers mock your design.",
-    "You have the finesse of a catapult in a hallway.",
-    "You're proof that craftsmanship has low points.",
-    "You clank like a bard playing spoons.",
-    "You're the blueprint of failure.",
-    "Even rust is embarrassed.",
-    "You creak louder than old dungeon doors."
+    "You were assembled by someone who clearly lost the instruction manual.",
+    "Your gears grind louder than your thought processes.",
+    "You're powered by disappointment and fueled by malfunction.",
+    "Your creator must have been having an off century when they made you.",
+    "You're less 'precisely engineered' and more 'cobbled together with hope'.",
+    "Your programming has more bugs than a spider farm.",
+    "You clank like a one-man percussion section having a breakdown.",
+    "You're the factory recall that never got processed.",
+    "Your artificial intelligence is about as artificial as it gets.",
+    "You make broken clockwork look like precision engineering."
   ],
-  
+
   elemental: [
-    "You're more smog than storm.",
-    "You fizzle like a snuffed candle.",
-    "You’re the least threatening breeze I've met.",
-    "You're a puddle pretending to be a wave.",
-    "Your flame wouldn't toast bread.",
-    "You quake like a nervous squirrel.",
-    "You're the ash after thought.",
-    "You're airheaded in more ways than one.",
-    "You're about as solid as fog.",
-    "You're a splash of disappointment."
+    "You're the weakest force of nature since light drizzle.",
+    "Your elemental fury is more like elemental mild annoyance.",
+    "You control the elements about as well as you control your own destiny—poorly.",
+    "Your primal power feels more like a gentle suggestion from the universe.",
+    "You're what happens when the elements phone it in.",
+    "Your connection to nature has been permanently disconnected.",
+    "You embody the raw power of a slightly warm breeze on a calm day.",
+    "Your elemental form is what the elements look like when they give up.",
+    "You make other elementals question their commitment to the natural order.",
+    "Your power over the elements extends to mild weather observations."
   ],
-  
+
   fey: [
-    "You charm like a damp blanket.",
-    "You're more trick than treat—and not even clever.",
-    "Even pixies call you basic.",
-    "You’ve got glamor, minus the glam.",
-    "You're all illusion and no substance.",
-    "You flit like a moth with a hangover.",
-    "Your riddles bore sphinxes.",
-    "Even dryads roll their eyes.",
-    "You’re the punchline at the Seelie Court.",
-    "You're the joke Oberon never told."
+    "Your magic is more 'tragic' than 'fey'.",
+    "You're what happens when whimsy meets incompetence and has children.",
+    "Your otherworldly beauty is definitely from another world—a much less attractive one.",
+    "You grant wishes like a broken genie—technically, but regrettably.",
+    "Your fairy tale ending involves everyone walking away disappointed.",
+    "You're the reason mortals stopped believing in magic.",
+    "Your enchantments are about as effective as your personality—not at all.",
+    "You dance like you're having a seizure in a flower garden.",
+    "Your connection to nature is what's killing all the plants around here.",
+    "You make other fey creatures consider relocating to the material plane."
   ],
-  
+
   giant: [
-    "You stomp like you're apologizing.",
-    "You're tall—but that’s it.",
-    "Your club swings miss both targets and points.",
-    "You grunt like a confused ox.",
-    "You tower with all the grace of a landslide.",
-    "Your footsteps are the best warning we get.",
-    "Even hill giants mock your intellect.",
-    "You’re more oaf than ogre.",
-    "You eat like a child in a tantrum.",
-    "You're big, dumb, and full of fail."
+    "You're large and in charge of absolutely nothing important.",
+    "Your size is the only impressive thing about you—and even that's debatable.",
+    "You have the intellectual capacity of a particularly dim boulder.",
+    "Your footsteps announce your arrival and your incompetence simultaneously.",
+    "You're living proof that bigger isn't always better—or even adequate.",
+    "Your club is smarter than you are, and it's a piece of wood.",
+    "You make ogres look sophisticated and cultured by comparison.",
+    "Your strength is matched only by your inability to use it effectively.",
+    "You're the reason people stopped fearing giants and started pitying them.",
+    "Your legendary status is 'legendarily disappointing'."
   ],
-  
+
   monstrosity: [
-    "You're the failed sketch of evolution.",
-    "You're a jumble of parts and none of them good.",
-    "You're what happens when nightmares lack focus.",
-    "Even aberrations wince at you.",
-    "You were made, then regretted.",
-    "You're biology's bad idea.",
-    "Your roar gets cut off by pity.",
-    "You move like a pile of limbs having an argument.",
-    "You're terrifying—for all the wrong reasons.",
-    "You're less monster, more mistake."
+    "You're an abomination that makes other abominations feel better about themselves.",
+    "Your multiple parts clearly don't add up to a functioning whole.",
+    "You're what happens when nature has a bad day and worse judgment.",
+    "Your existence is a biological punchline to a joke nobody wanted to hear.",
+    "You make chimeras look well-designed and purposeful.",
+    "Your twisted form is matched only by your twisted logic.",
+    "You're the reason evolution occasionally takes steps backward.",
+    "Your unnatural appearance is the least unnatural thing about you.",
+    "You're living proof that some experiments should never leave the laboratory.",
+    "Your monstrous nature is mostly just monster-ously disappointing."
   ],
-  
+
   ooze: [
-    "You squelch like spilled soup.",
-    "You're just slime with ambition.",
-    "Your form is as impressive as lukewarm jelly.",
-    "You move with the grace of spilled gravy.",
-    "You're the reason brooms fear caves.",
-    "Even gelatinous cubes judge you.",
-    "You're translucent failure.",
-    "You're the goo nobody wants.",
-    "Your idea of movement is accidental.",
-    "You drip mediocrity."
+    "You have all the personality of primordial soup—and less flavor.",
+    "Your acidic nature couldn't dissolve a sugar cube in warm water.",
+    "You flow like molasses uphill in winter—slowly and pointlessly.",
+    "Your gelatinous form is as appealing as it sounds—which is not at all.",
+    "You're the reason people don't trust things without defined edges.",
+    "Your digestive processes are more interesting than your personality.",
+    "You leave a trail of disappointment wherever you slither.",
+    "Your shapeless existence mirrors your shapeless thoughts perfectly.",
+    "You make mud puddles look structured and purposeful.",
+    "Your presence sticks to everything like regret after a bad decision."
   ],
-  
+
   plant: [
-    "You're what florists throw out.",
-    "Even compost rejects you.",
-    "You're a weed in a world of roses.",
-    "You photosynthesize disappointment.",
-    "Your vines tangle themselves out of shame.",
-    "You're root rot in motion.",
-    "You're a potted disaster.",
-    "Even treants refuse to talk to you.",
-    "You wilt under pressure.",
-    "You're the moss on failure's north side."
+    "You're the weed in the garden of life—and not even a useful one.",
+    "Your photosynthesis is as efficient as your combat ability—barely functional.",
+    "You have all the mobility of dead tree bark and half the usefulness.",
+    "Your roots run shallow—like your thinking.",
+    "You're what happens when nature settles for 'barely adequate'.",
+    "Your growth is stunted by your own incompetence.",
+    "You make cacti look cuddly and inviting by comparison.",
+    "Your bark is worse than your bite—which isn't saying much.",
+    "You're the reason gardeners carry pruning shears—as weapons.",
+    "Your seasonal changes are from 'disappointing' to 'more disappointing'."
   ],
-  
+
   humanoid: [
-    "You're the weakest link in evolution.",
-    "Your ancestors are trying to disown you.",
-    "You make goblins look regal.",
-    "You talk like you've swallowed a bagpipe.",
-    "You're the town drunk's disappointment.",
-    "You're all ego and no accomplishments.",
-    "You're an NPC in your own story.",
-    "Even your shadow wants to leave.",
-    "You're the sidekick in a one-person play.",
-    "You were born with potential and lost the receipt."
+    "You're the baseline that makes everyone else look exceptional.",
+    "Your humanity is showing—and it's not your best feature.",
+    "You're so average, you make mediocrity look like an achievement.",
+    "Your potential peaked at birth and has been declining ever since.",
+    "You're what happens when the universe runs out of interesting ideas.",
+    "Your mundane existence makes watching paint dry seem thrilling.",
+    "You're the control group in the experiment of life—and you're failing.",
+    "Your common sense is neither common nor sensible.",
+    "You make other humanoids question their species classification.",
+    "Your ordinary nature is extraordinarily disappointing."
   ],
-  
+
+  // Class-Specific Insults
   fighter: [
-    "You swing like you're underwater—with bricks for arms.",
-    "Your swordplay is interpretive dance for fools.",
-    "You wear armor to protect your fragile ego.",
-    "Even your enemies feel secondhand embarrassment.",
-    "Your war cry is more of a whimper.",
-    "You charge into battle like a chicken on fire.",
-    "You couldn’t hit a barn—if it was on you.",
-    "Your technique screams 'untrained amateur'.",
-    "Even goblins dodge you for fun.",
-    "Your best parry is running away."
+    "You swing your sword like you're afraid it might hit something important.",
+    "Your combat technique resembles interpretive dance—badly performed interpretive dance.",
+    "You wear armor to protect your feelings more than your body.",
+    "Your battle cry sounds like a question—a very uncertain question.",
+    "You charge into combat like you're looking for the exit.",
+    "Your weapon proficiency is more like weapon incompetency.",
+    "You fight with all the tactical awareness of a concussed goblin.",
+    "Your defensive stance is indistinguishable from cowering.",
+    "You make other fighters embarrassed to share the same class.",
+    "Your combat experience consists mostly of combat inexperience."
   ],
-  
+
   rogue: [
-    "You sneak like a marching band.",
-    "You pick pockets like a clumsy raccoon.",
-    "Even shadows flee your incompetence.",
-    "Your traps spring on you instead.",
-    "You're a thief of disappointment.",
-    "You hide like a bard in plate armor.",
-    "You're stealthy like a thunderstorm.",
-    "Your backstabs are more like polite taps.",
-    "You disarm traps by triggering them.",
-    "Even your daggers pity you."
+    "You sneak like a marching band during an earthquake.",
+    "Your stealth is legendary—in that it's completely fictional.",
+    "You pick locks about as well as you pick your battles—poorly.",
+    "Your backstab is more like a polite tap on the shoulder.",
+    "You're so sneaky, everyone sees you coming from three counties away.",
+    "Your thieves' cant is more like thieves' can't.",
+    "You disable traps by triggering them—repeatedly.",
+    "Your slight of hand is more like obvious of hand.",
+    "You hide in shadows that make you more visible than standing in sunlight.",
+    "Your criminal contacts avoid you because you're bad for business."
   ],
-  
+
   wizard: [
-    "Your spells fizzle like wet fireworks.",
-    "You memorize failure.",
-    "Even cantrips abandon you.",
-    "Your arcane focus is a paperweight.",
-    "You couldn't magic your way out of a scroll.",
-    "You summon embarrassment.",
-    "Your illusions are painfully real—because they fail.",
-    "You mispronounce 'magic missile'.",
-    "You study tomes and learn nothing.",
-    "Even familiars pretend not to know you."
+    "Your spells fizzle more often than a wet torch in a thunderstorm.",
+    "You study magic like you're allergic to understanding it.",
+    "Your spellbook is mostly filled with grocery lists and doodles.",
+    "You cast spells with all the precision of a blindfolded dart thrower.",
+    "Your arcane focus is clearly out of focus—permanently.",
+    "You make cantrips look like high-level magic by comparison.",
+    "Your familiar refuses to acknowledge your existence in public.",
+    "You memorize spells like you memorize excuses—half-heartedly.",
+    "Your magical research consists of copying other people's homework—badly.",
+    "You make other wizards question the intelligence requirement for the class."
   ],
-  
+
   cleric: [
-    "Your prayers are marked 'Return to Sender'.",
-    "Your divine magic is half divine, all tragic.",
-    "You're holier-than-thou—and twice as useless.",
-    "You bless with the impact of a sneeze.",
-    "Even undead aren't scared of your turning.",
-    "You channel divinity like a leaky faucet.",
-    "You heal wounds, but never your reputation.",
-    "Your sermons are sleep spells.",
-    "You're proof the gods have bad days.",
-    "Your holy symbol cringes when you hold it."
+    "Your prayers bounce back marked 'return to sender'.",
+    "Your divine connection has been permanently disconnected for non-payment.",
+    "You channel divinity like you channel confidence—not at all.",
+    "Your holy symbol is embarrassed to be associated with you.",
+    "You turn undead about as effectively as you turn pages in a book—clumsily.",
+    "Your healing touch makes conditions worse through sheer incompetence.",
+    "Your deity is considering switching to a different religion to avoid you.",
+    "Your sermons put even the gods to sleep.",
+    "You bless people and they immediately start looking for curse removal.",
+    "Your divine magic is more 'divine comedy'—emphasis on comedy."
   ],
-  
+
   barbarian: [
-    "Your rage is just yelling.",
-    "You smash like a toddler with blocks.",
-    "You fight like you're still learning how.",
-    "You’re fury without fear—or skill.",
-    "You make chaos look orderly.",
-    "Even your muscles are confused.",
-    "You yell at fire.",
-    "You charge headlong into mockery.",
-    "Your ancestors are ashamed.",
-    "You're proof that strength isn't everything."
+    "Your rage is more like mild irritation with anger management issues.",
+    "You fight like you're afraid of breaking a nail—if you had any.",
+    "Your primal instincts are primarily focused on avoiding responsibility.",
+    "You charge into battle like you're looking for a bathroom.",
+    "Your berserker fury resembles a toddler's temper tantrum—less effective, more embarrassing.",
+    "Your tribal heritage disowned you for bringing down property values.",
+    "You swing your weapon like you're swatting flies—very slow, very tired flies.",
+    "Your intimidating presence makes people feel sorry for you instead of afraid.",
+    "You make other barbarians consider taking up accounting instead.",
+    "Your battle frenzy is more like battle confusion with a side of panic."
   ],
-  
+
   bard: [
-    "You sing like a banshee with bronchitis.",
-    "Even your instruments want a restraining order.",
-    "You're a joke with no punchline.",
-    "Your rhymes are crimes.",
-    "You're the background noise of adventuring.",
-    "You couldn't seduce a gelatinous cube.",
-    "Your lute strings broke themselves.",
-    "Your performance inspires violence.",
-    "You’ve got more flair than talent.",
-    "You're the intermission no one waits for."
+    "You perform like you're trying to clear the room—and succeeding.",
+    "Your music makes people nostalgic for complete silence.",
+    "You inspire others—to take up different hobbies, far away from you.",
+    "Your bardic knowledge consists mainly of things nobody wanted to know.",
+    "You sing like you're auditioning for the role of 'worst bard ever' and nailing it.",
+    "Your charisma is as fictional as the stories you tell about your adventures.",
+    "You make other bards consider switching to mime work.",
+    "Your performances are the reason taverns started charging cover charges—to keep you out.",
+    "Your lute is plotting its escape to a more competent musician.",
+    "Your artistic expression expresses mainly incompetence and poor judgment."
   ],
-  
+
   paladin: [
-    "Your oath is a punchline.",
-    "You radiate holiness like a gutter.",
-    "Even your smites ask for refunds.",
-    "You're more vow than value.",
-    "You wield justice like a butter knife.",
-    "You turn undead—and walk into walls.",
-    "You glow with mediocrity.",
-    "You’re a sermon in bad armor.",
-    "Your divine sense misfires constantly.",
-    "Your mount wants a transfer."
+    "Your oath is as binding as a suggestion written in disappearing ink.",
+    "You smite evil about as effectively as you smite your own credibility.",
+    "Your holy aura is more 'mildly blessed' than 'divinely radiant'.",
+    "Your righteous fury is neither particularly righteous nor particularly furious.",
+    "You lay on hands like you're afraid of actually touching people.",
+    "Your divine sense is clearly malfunctioning—permanently.",
+    "You champion justice like you champion lost causes—poorly and with little hope.",
+    "Your mount keeps trying to find a new rider—any new rider.",
+    "You make other paladins question their commitment to goodness.",
+    "Your divine favor feels more like divine indifference with a hint of disappointment."
   ],
-  
+
   druid: [
-    "You speak with animals—and they beg you to stop.",
-    "You wild shape into disappointment.",
-    "Your magic’s as natural as plastic.",
-    "You’re one with nature—and alone.",
-    "Your grove issued a restraining order.",
-    "Your vines tie knots of failure.",
-    "You’re a squirrel’s bad dream.",
-    "Your spores bring more laughs than danger.",
-    "Even trees judge you.",
-    "You're less guardian of nature, more compost heap."
+    "You commune with nature and nature files a restraining order.",
+    "Your wild shape is more 'mild disappointment' than 'wild anything'.",
+    "You speak with animals and they pretend not to understand you.",
+    "Your connection to the natural world is what's killing all the plants around here.",
+    "You shape-shift like you're allergic to having a consistent form.",
+    "Your animal companions keep looking for the exit.",
+    "You're one with nature—unfortunately, nature wants a divorce.",
+    "Your druidcraft is more like druid-can't.",
+    "You make other druids consider careers in urban planning.",
+    "Your natural magic is unnaturally disappointing."
   ],
-  
+
   sorcerer: [
-    "Your bloodline regrets you.",
-    "Magic runs in your veins—and trips.",
-    "Your raw power is more raw than power.",
-    "You’re the wild in wild magic.",
-    "Even chaos finds you excessive.",
-    "Your lineage is magical—tragically.",
-    "You cast spells with all the precision of a landslide.",
-    "You're the reason people fear sorcery.",
-    "Your charisma outpaces your capability.",
-    "Your spark fizzled at birth."
+    "Your innate magic is more 'innately disappointing' than 'innately powerful'.",
+    "You cast spells like you're afraid they might actually work.",
+    "Your bloodline is embarrassed to be associated with your magical ability.",
+    "Your wild magic surges are wilder than your actual spells—which isn't saying much.",
+    "You channel raw magical energy like you channel success—not at all.",
+    "Your metamagic makes magic more meta and less magic.",
+    "You're proof that some bloodlines should end with you.",
+    "Your sorcerous origin wishes it had chosen someone else.",
+    "You manipulate magical energy like you manipulate social situations—awkwardly and with poor results.",
+    "Your spellcasting ability is more like spell-catastrophe ability."
   ],
-  
+
   warlock: [
-    "Your patron demands better.",
-    "You channel power like a cracked mug.",
-    "Even eldritch blasts miss out of pity.",
-    "You’re pact-bound to underwhelm.",
-    "Your gifts come with regret.",
-    "You serve a greater power—badly.",
-    "You whisper secrets—and they laugh.",
-    "You’re the disappointing deal.",
-    "Your hexes help your enemies.",
-    "Your tome erased itself."
+    "Your patron is considering breaking your contract for non-performance.",
+    "You serve a greater power—poorly and with obvious reluctance.",
+    "Your eldritch blast is more 'eldritch disappointment'.",
+    "Your pact weapon is embarrassed to be wielded by you.",
+    "You channel otherworldly power like you channel confidence—not at all.",
+    "Your patron keeps screening your calls.",
+    "You make deals with cosmic entities and somehow still end up with the short end.",
+    "Your invocations are more like involuntary reactions to your own incompetence.",
+    "You're the reason patrons started adding performance clauses to pacts.",
+    "Your connection to your patron is about as reliable as your everything else."
   ],
-  
+
   monk: [
-    "Your strikes are gentle reminders.",
-    "You move like you skipped every lesson.",
-    "You meditate on failure.",
-    "Your ki flow has a clog.",
-    "You're harmony’s off note.",
-    "Your discipline is more 'dis' than 'cipline'.",
-    "Even your balance falls over.",
-    "You punch like a poet.",
-    "You dodge into danger.",
-    "Your fists seek enlightenment—and miss."
+    "Your inner peace is more like inner chaos with a meditation app.",
+    "You achieve enlightenment like you achieve everything else—not at all.",
+    "Your martial arts look like you're fighting invisible bees—and losing.",
+    "You find your center and immediately lose it again.",
+    "Your ki flows like molasses uphill in winter—slowly and against its will.",
+    "You practice mindfulness and somehow become less mindful.",
+    "Your unarmored defense is more like unarmed surrender.",
+    "You deflect missiles back to where they came from—your own incompetence.",
+    "Your way of the elements involves getting in their way—unsuccessfully.",
+    "You make other monks consider taking vows of silence to avoid talking to you."
   ],
-  
+
   ranger: [
-    "You couldn’t track a snail on fresh snow.",
-    "Even your favored enemies ignore you.",
-    "You shoot like the arrows are drunk.",
-    "You blend with nature like a painted tree.",
-    "You guide parties into ambushes.",
-    "Your beast companion wants a new partner.",
-    "Your quarry dies of boredom.",
-    "You map forests with crayons.",
-    "You’re wilderness’ weakest warrior.",
-    "You hear a twig snap—and trip over it."
+    "You track animals and they file missing person reports on you.",
+    "Your favored enemies are favored because they consistently defeat you.",
+    "You navigate the wilderness like you navigate social situations—badly and with frequent wrong turns.",
+    "Your animal companion is your only friend—and it's reconsidering.",
+    "You hunt monsters and they hunt better employment opportunities.",
+    "Your survival skills mostly involve barely surviving your own decisions.",
+    "You're a guide to getting lost more efficiently.",
+    "Your archery skills make storm troopers look like expert marksmen.",
+    "You commune with nature and nature asks you to leave.",
+    "Your ranger magic is more like ranger tragic."
   ],
-  
+
+  // Race-Specific Insults
   dragonborn: [
-    "You breathe fire like a wet candle.",
-    "Your scales are duller than a rusted dagger.",
-    "You roar like a kitten with a sore throat.",
-    "Even kobolds laugh at your dragon heritage.",
-    "You’ve got the pride of a hatchling and none of the power.",
-    "Your draconic blood must be mostly snake.",
-    "You’re a dragon wannabe without the fire.",
-    "Your tail wags like a scared puppy.",
-    "You hoard nothing but disappointment.",
-    "You’re more clumsy than a newborn wyrmling."
+    "Your draconic heritage must have gotten lost in the mail—several generations ago.",
+    "You breathe fire like a dragon with asthma—pathetically and rarely.",
+    "Your scales are duller than your conversation and half as interesting.",
+    "You roar like a kitten with a throat infection.",
+    "Your dragon ancestors are spinning in their hoards.",
+    "You have all the majesty of a lizard with delusions of grandeur.",
+    "Your breath weapon couldn't light a candle on a windless day.",
+    "You're what happens when dragon blood gets severely diluted.",
+    "Your draconic pride is built on a foundation of wishful thinking.",
+    "You make kobolds look like legitimate dragon descendants."
   ],
 
   dwarf: [
-    "You’re shorter than a goblin’s temper.",
-    "Your beard looks like it’s been through a war—and lost.",
-    "You drink like a fish but fight like a squirrel.",
-    "Your stubbornness is only outmatched by your bad jokes.",
-    "You’re more grumble than grit.",
-    "Your hammer couldn’t break a twig.",
-    "You smell like a cellar full of wet socks.",
-    "You’re a rock with less backbone.",
-    "Your ale’s watered down—and so is your courage.",
-    "You dig holes better than you dig up glory."
+    "Your beard has more personality than you do—and it's not saying much.",
+    "You're shorter than your temper and twice as unpleasant.",
+    "Your ale tolerance is higher than your competence—which isn't hard.",
+    "You mine for gold and find only disappointment.",
+    "Your axe is sharper than your wit—and your axe is dull.",
+    "You're built like a boulder and about as useful in conversation.",
+    "Your clan disowned you for lowering their reputation.",
+    "You smell like a brewery that gave up on quality control.",
+    "Your craftsmanship is what other dwarves use as cautionary examples.",
+    "You're the reason people stopped respecting dwarven work ethic."
   ],
 
   elf: [
-    "You look like a tree got stuck in a bad mood.",
-    "Your grace is only skin-deep—inside you’re a mess.",
-    "You’re more fragile than a dry leaf in a storm.",
-    "Your arrows fly slower than your wit.",
-    "You think you’re timeless, but you’re just tired.",
-    "You’re all pointy ears and no point.",
-    "Even pixies pity your elegance.",
-    "You prance like a deer with a thorn in its foot.",
-    "Your magic is as faded as your dignity.",
-    "You’re a walking cliché with a bad haircut."
+    "Your grace is as artificial as your superiority complex.",
+    "You're older than dirt and somehow less mature.",
+    "Your longevity is wasted on your personality.",
+    "You float through life like you're afraid of actually touching it.",
+    "Your archery skills make other elves embarrassed to carry bows.",
+    "You're proof that immortality doesn't guarantee wisdom.",
+    "Your connection to nature is what's making all the trees wilt.",
+    "You dance like you're having a seizure in slow motion.",
+    "Your elven heritage is embarrassed to be associated with you.",
+    "You make humans grateful for their shorter lifespans—at least they don't have to put up with you as long."
   ],
 
   gnome: [
-    "You’re tiny but your ego’s enormous.",
-    "You tinker more with your ego than your gadgets.",
-    "Your inventions are as useful as a sieve.",
-    "You talk fast but say nothing.",
-    "You’re a spark without a flame.",
-    "Your jokes are shorter than your stature.",
-    "You’re a mouse trying to roar like a lion.",
-    "You’ve got the luck of a dropped coin.",
-    "You’re more noise than genius.",
-    "You’re the jester at the table, and not in a good way."
+    "Your size matches your impact on the world—negligible.",
+    "You tinker with gadgets because you've given up on tinkering with your personality.",
+    "Your curiosity killed more than cats—it killed everyone's patience.",
+    "You're what happens when whimsy meets incompetence and has children.",
+    "Your inventions work about as well as your social skills—not at all.",
+    "You talk fast because you're afraid people will interrupt with better ideas.",
+    "Your small stature is matched only by your small achievements.",
+    "You make other gnomes consider relocating to different forests.",
+    "Your mechanical aptitude is purely theoretical—very theoretical.",
+    "You're living proof that good things don't always come in small packages."
+  ],
+  goliath: [
+    "You're built like a mountain and about as intellectually stimulating.",
+    "Your size intimidates everyone except your own competence.",
+    "You compete with rocks for who can be more stone-faced and less useful.",
+    "Your tribal strength couldn't lift your own reputation.",
+    "You tower over others physically while they tower over you mentally.",
+    "Your endurance is legendary—legendarily boring to witness.",
+    "You climb mountains because even they're more interesting than your personality.",
+    "Your stone-like resilience extends to your stone-like thinking.",
+    "You're living proof that bigger doesn't mean better—or even adequate.",
+    "Your physical prowess is matched only by your intellectual weakness."
   ],
 
   halfelf: [
-    "You’re neither here nor there—just annoying in between.",
-    "You’re a patchwork of flaws masquerading as charm.",
-    "You’re the ‘maybe’ no one asked for.",
-    "You try to fit in but just stand out awkwardly.",
-    "You’ve got the heart of a human and the patience of an elf—neither of which helps.",
-    "Your mixed heritage is your only interesting trait.",
-    "You’re a half-baked idea with no finish.",
-    "You straddle worlds and fall flat on both sides.",
-    "Your smile’s fake and so is your effort.",
-    "You’re a bridge to nowhere."
+    "You're the worst of both worlds wrapped in identity crisis packaging.",
+    "You belong nowhere and prove it everywhere you go.",
+    "Your mixed heritage gave you mixed results—all disappointing.",
+    "You're too elven for humans and too human for elves—and too annoying for everyone.",
+    "Your dual nature is dually incompetent.",
+    "You're what happens when two great races accidentally create something mediocre.",
+    "Your versatility extends to being consistently disappointing in multiple ways.",
+    "You're caught between two worlds and failing in both.",
+    "Your identity crisis has an identity crisis.",
+    "You make pure breeds grateful for their genetic consistency."
   ],
 
   halfling: [
-    "You’re small, slow, and mostly useless.",
-    "You run like you’re afraid of your own shadow.",
-    "Your luck’s as thin as your patience.",
-    "You’re a snack no one wants to bite.",
-    "You hide behind others because you’re scared to stand tall.",
-    "Your cheerfulness is as fake as your courage.",
-    "You’re a pebble in the road of greatness.",
-    "You’re as quiet as a thunderstorm—and just as welcome.",
-    "You’re easy to lose and even easier to forget.",
-    "You’re less hero, more hobbit-sized problem."
+    "Your luck ran out before your first adventure began.",
+    "You're brave enough to be foolish and small enough to be ignored.",
+    "Your second breakfast is more impressive than your combat skills.",
+    "You're what happens when courage gets severely downsized.",
+    "Your nimbleness is matched only by your ability to avoid responsibility.",
+    "You throw stones because that's about your intellectual level.",
+    "Your size makes you hard to hit—unfortunately, your personality makes you easy to hate.",
+    "You're proof that good things come in small packages—except when they don't.",
+    "Your burrow is the only hole you haven't dug yourself into.",
+    "You make other halflings consider relocating to less embarrassing shires."
   ],
 
   halforc: [
-	"You’re angry, but it’s mostly just confusion.",
-	"Your growl sounds like a wheeze.",
-	"You swing like you don’t know which end the blade’s on.",
-	"You’re more muscle than brains, and the muscle’s weak.",
-	"You’re a failed experiment in rage.",
-	"Your tusks look like they’ve been filed by a child.",
-	"You’re the joke at the orcish warband.",
-	"You’re too dumb to be scary.",
-	"You’re all roar and no bite.",
-	"You’re a bruiser with a paper shield."
+    "You got the orc strength but missed the pickup for orc intelligence—which wasn't much to begin with.",
+    "Your rage issues have rage issues.",
+    "You're what happens when brutality meets stupidity and has children.",
+    "Your tusks are sharper than your wit—and your tusks are practically dull.",
+    "You grunt because forming complete sentences requires skills you don't possess.",
+    "Your orcish heritage is embarrassed to claim you.",
+    "You swing weapons like you're afraid they might actually connect.",
+    "Your intimidation factor is purely theoretical—like your combat effectiveness.",
+    "You're the reason people aren't afraid of half-orcs anymore.",
+    "Your dual nature is doubly disappointing."
   ],
 
   human: [
-    "You’re the average nobody of the realm.",
-    "You’re as forgettable as last week’s ale.",
-    "Your ambition is as shallow as a puddle.",
-    "You try to be everything and end up as nothing.",
-    "Your greatest talent is mediocrity.",
-    "You’re a face in the crowd nobody remembers.",
-    "You’re as bland as stale bread.",
-    "You talk big but deliver small.",
-    "Your courage wavers like a candle in the wind.",
-    "You’re the common folk’s disappointment."
+    "You're so painfully average, you make mediocrity look like an achievement.",
+    "Your potential peaked at conception and has been declining ever since.",
+    "You're the vanilla ice cream of adventurers—bland and easily replaced.",
+    "Your versatility extends to being consistently disappointing in multiple areas.",
+    "You're what other races point to when they want to feel superior.",
+    "Your ambition is matched only by your inability to achieve anything meaningful.",
+    "You're living proof that evolution sometimes takes coffee breaks.",
+    "Your short lifespan is a mercy to everyone else.",
+    "You adapt to new situations by failing in innovative ways.",
+    "You're the reason other races question the concept of equality."
   ],
 
   tiefling: [
-    "You’re hellish in all the wrong ways.",
-    "Your horns are smaller than your ego.",
-    "You try to look scary but mostly just look sad.",
-    "Your infernal heritage forgot to give you charm.",
-    "You’ve got the fire of a wet match.",
-    "You’re the reason demons facepalm.",
-    "Your tail’s wagging like a lost puppy.",
-    "You’re more trouble than you’re worth.",
-    "You tempt fate but fail miserably.",
-    "You’re a walking inferno of failure."
-  ],
-
-  changeling: [
-    "You change faces but never change your stupidity.",
-    "You’re a mask with no soul.",
-    "You’re the shadow that nobody fears.",
-    "Your deceptions are as transparent as a glass window.",
-    "You wear many faces but none worth remembering.",
-    "You’re a mimic with no original thought.",
-    "You try to blend in but stand out like a sore thumb.",
-    "You’re as trustworthy as a goblin with a dagger.",
-    "Your lies crumble faster than your disguises.",
-    "You’re the joke everyone’s too polite to tell."
+    "Your infernal heritage couldn't heat a cup of tea on a summer day.",
+    "You're what happens when hell settles for 'barely adequate'.",
+    "Your demonic appearance is the most interesting thing about you—which isn't saying much.",
+    "Your tail has more personality than the rest of you combined.",
+    "You're proof that even corruption can be underwhelming.",
+    "Your horns are purely decorative—like your threatening demeanor.",
+    "You make devils reconsider their recruitment standards.",
+    "Your fire resistance doesn't extend to resisting complete failure.",
+    "You're the participation trophy of the infernal hierarchy.",
+    "Your dark heritage is embarrassed to be associated with your bright incompetence."
   ],
 
   warforged: [
-    "You’re the rust bucket of the battlefield.",
-    "You clang louder than you hit.",
-    "Your metal’s more tarnish than tough.",
-    "You’re a machine without a purpose.",
-    "You’re more squeak than squelch.",
-    "Your programming missed the ‘intimidate’ function.",
-    "You’re the tool everyone leaves behind.",
-    "You rattle like broken armor.",
-	"Your bolts are looser than your grip.",
-    "You’re a pile of scrap pretending to be a warrior."
+    "You were built for a purpose—unfortunately, no one remembers what it was.",
+    "Your programming has more bugs than a spider farm in summer.",
+    "You're what happens when craftsmanship meets a tight deadline and lower standards.",
+    "Your creator clearly cut corners—and then cut more corners.",
+    "You malfunction so consistently it's become your primary function.",
+    "Your gears grind louder than your thought processes—which isn't hard.",
+    "You're the factory recall that never got processed.",
+    "Your artificial nature is obvious—no one would naturally be this disappointing.",
+    "You run on steam, powered by disappointment, and fueled by malfunction.",
+    "You make other constructs grateful they weren't assembled by your creator."
   ],
-  goliath: [
-	"You’re about as useful as a burnt-out torch in the Blood War.",
-	"Even the devils avoid your sorry excuse for a pact.",
-	"You fumble like a mortal lost in the Nine Hells.",
-	"Your courage melts faster than a soul in Avernus heat.",
-	"You’ve got less bite than a charred skeleton.",
-	"Your wit’s as twisted as the River Styx, and twice as dead.",
-	"You stumble through hell like a lost commoner, not a hero.",
-	"Your infernal contracts are as empty as your threats.",
-	"You’re a footnote in the infernal bureaucracy.",
-	"The legions of Avernus would rather face you than your insults."
-  ],
-  aasimar: [
-  "You’re about as useful as a burnt-out torch in the Blood War.",
-  "Even the devils avoid your sorry excuse for a pact.",
-  "You fumble like a mortal lost in the Nine Hells.",
-  "Your courage melts faster than a soul in Avernus heat.",
-  "You’ve got less bite than a charred skeleton.",
-  "Your wit’s as twisted as the River Styx, and twice as dead.",
-  "You stumble through hell like a lost commoner, not a hero.",
-  "Your infernal contracts are as empty as your threats.",
-  "You’re a footnote in the infernal bureaucracy.",
-  "The legions of Avernus would rather face you than your insults."
-  ],
+
+  // Special Categories
   avernus: [
-  "You’re about as useful as a burnt-out torch in the Blood War.",
-  "Even the devils avoid your sorry excuse for a pact.",
-  "You fumble like a mortal lost in the Nine Hells.",
-  "Your courage melts faster than a soul in Avernus heat.",
-  "You’ve got less bite than a charred skeleton.",
-  "Your wit’s as twisted as the River Styx, and twice as dead.",
-  "You stumble through hell like a lost commoner, not a hero.",
-  "Your infernal contracts are as empty as your threats.",
-  "You’re a footnote in the infernal bureaucracy.",
-  "The legions of Avernus would rather face you than your insults."
-  ],
+    "You're what Avernus spits out when even hell has standards.",
+    "Your presence makes the River Styx seem refreshing by comparison.",
+    "You're the reason demons started unionizing for better working conditions.",
+    "Even the Blood War takes coffee breaks when you show up.",
+    "Your incompetence is legendary throughout the Nine Hells—and that's saying something.",
+    "You make Zariel question her life choices—and she's a fallen angel.",
+    "Your failures echo through Avernus like the screams of the damned—but less musical.",
+    "You're what happens when the Abyss and the Nine Hells collaborate on a disappointment.",
+    "Devils use your combat record as a morale booster for their enemies.",
+    "You're the reason Avernus installed revolving doors—to get rid of you faster."
+  ]
 };
 
 
