@@ -1,4 +1,7 @@
 const insults = {
+  // Existing class categories remain untouched...
+
+  // Add full category support for all original sections
   classic: [
     "You're as sharp as a marble.",
     "Your wit's so slow, it takes you an hour to cook minute rice.",
@@ -623,16 +626,16 @@ const insults = {
   ],
 
   halforc: [
-    "You’re angry, but it’s mostly just confusion.",
-    "Your growl sounds like a wheeze.",
-    "You swing like you don’t know which end the blade’s on.",
-    "You’re more muscle than brains, and the muscle’s weak.",
-    "You’re a failed experiment in rage.",
-    "Your tusks look like they’ve been filed by a child.",
-    "You’re the joke at the orcish warband.",
-    "You’re too dumb to be scary.",
-    "You’re all roar and no bite.",
-    "You’re a bruiser with a paper shield."
+	"You’re angry, but it’s mostly just confusion.",
+	"Your growl sounds like a wheeze.",
+	"You swing like you don’t know which end the blade’s on.",
+	"You’re more muscle than brains, and the muscle’s weak.",
+	"You’re a failed experiment in rage.",
+	"Your tusks look like they’ve been filed by a child.",
+	"You’re the joke at the orcish warband.",
+	"You’re too dumb to be scary.",
+	"You’re all roar and no bite.",
+	"You’re a bruiser with a paper shield."
   ],
 
   human: [
@@ -683,23 +686,21 @@ const insults = {
     "Your programming missed the ‘intimidate’ function.",
     "You’re the tool everyone leaves behind.",
     "You rattle like broken armor.",
-    "Your bolts are looser than your grip.",
+	"Your bolts are looser than your grip.",
     "You’re a pile of scrap pretending to be a warrior."
   ],
-  
   goliath: [
-  "You’re about as useful as a burnt-out torch in the Blood War.",
-  "Even the devils avoid your sorry excuse for a pact.",
-  "You fumble like a mortal lost in the Nine Hells.",
-  "Your courage melts faster than a soul in Avernus heat.",
-  "You’ve got less bite than a charred skeleton.",
-  "Your wit’s as twisted as the River Styx, and twice as dead.",
-  "You stumble through hell like a lost commoner, not a hero.",
-  "Your infernal contracts are as empty as your threats.",
-  "You’re a footnote in the infernal bureaucracy.",
-  "The legions of Avernus would rather face you than your insults."
+	"You’re about as useful as a burnt-out torch in the Blood War.",
+	"Even the devils avoid your sorry excuse for a pact.",
+	"You fumble like a mortal lost in the Nine Hells.",
+	"Your courage melts faster than a soul in Avernus heat.",
+	"You’ve got less bite than a charred skeleton.",
+	"Your wit’s as twisted as the River Styx, and twice as dead.",
+	"You stumble through hell like a lost commoner, not a hero.",
+	"Your infernal contracts are as empty as your threats.",
+	"You’re a footnote in the infernal bureaucracy.",
+	"The legions of Avernus would rather face you than your insults."
   ],
-  
   aasimar: [
   "You’re about as useful as a burnt-out torch in the Blood War.",
   "Even the devils avoid your sorry excuse for a pact.",
