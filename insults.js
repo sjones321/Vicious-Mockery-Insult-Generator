@@ -1,7 +1,6 @@
 const insults = {
 // Basic Categories
 classic: [
-	"You aren't your best friends best friend",
 	"You're as sharp as a marble and twice as dense.",
 	"Your wit's so slow, it takes you an hour to cook minute rice.",
 	"You're about as useful as a chocolate teapot in a dragon's hoard.",
@@ -355,7 +354,7 @@ int: [
 	"Your mental acuity is sharper than a bowling ball and twice as dense.",
 	"You have the intellectual presence of a absent-minded professor who forgot to show up to his own absence.",
 	"Your brain is like a GPS that's been dropped in a blender—it knows where it's supposed to go, but all the directions are scrambled."
-];
+],
 
 wis: [
 	"Your insight reads like a blank scroll written in invisible ink.",
@@ -734,7 +733,8 @@ dragonborn: [
 "Your breath weapon couldn't light a candle on a windless day.",
 "You're what happens when dragon blood gets severely diluted.",
 "Your draconic pride is built on a foundation of wishful thinking.",
-"You make kobolds look like legitimate dragon descendants."
+"You make kobolds look like legitimate dragon descendants.",
+"All scales, no balls. You’re basically a lizard in cosplay.",
 ],
 
 dwarf: [
@@ -747,7 +747,8 @@ dwarf: [
 "Your clan disowned you for lowering their reputation.",
 "You smell like a brewery that gave up on quality control.",
 "Your craftsmanship is what other dwarves use as cautionary examples.",
-"You're the reason people stopped respecting dwarven work ethic."
+"You're the reason people stopped respecting dwarven work ethic.",
+"Your beard smells like stale ale and your mother’s regrets.",
 ],
 
 elf: [
@@ -760,7 +761,8 @@ elf: [
 "Your connection to nature is what's making all the trees wilt.",
 "You dance like you're having a seizure in slow motion.",
 "Your elven heritage is embarrassed to be associated with you.",
-"You make humans grateful for their shorter lifespans—at least they don't have to put up with you as long."
+"You make humans grateful for their shorter lifespans—at least they don't have to put up with you as long.",
+"Oh look, another pointy eared virgin with a superiority complex.",
 ],
 
 gnome: [
@@ -773,7 +775,8 @@ gnome: [
 "Your small stature is matched only by your small achievements.",
 "You make other gnomes consider relocating to different forests.",
 "Your mechanical aptitude is purely theoretical—very theoretical.",
-"You're living proof that good things don't always come in small packages."
+"You're living proof that good things don't always come in small packages.",
+"What did the gnome say when he walked into a wall with an erection? Ouch, my nose!",
 ],
 goliath: [
 "You're built like a mountain and about as intellectually stimulating.",
@@ -798,7 +801,8 @@ halfelf: [
 "Your versatility extends to being consistently disappointing in multiple ways.",
 "You're caught between two worlds and failing in both.",
 "Your identity crisis has an identity crisis.",
-"You make pure breeds grateful for their genetic consistency."
+"You make pure breeds grateful for their genetic consistency.",
+"You’re not exotic, just unwanted by both sides.",
 ],
 
 halfling: [
@@ -811,7 +815,8 @@ halfling: [
 "Your size makes you hard to hit—unfortunately, your personality makes you easy to hate.",
 "You're proof that good things come in small packages—except when they don't.",
 "Your burrow is the only hole you haven't dug yourself into.",
-"You make other halflings consider relocating to less embarrassing shires."
+"You make other halflings consider relocating to less embarrassing shires.",
+"You're just a goblin with manners and a gambling addiction.",
 ],
 
 halforc: [
@@ -824,7 +829,8 @@ halforc: [
 "You swing weapons like you're afraid they might actually connect.",
 "Your intimidation factor is purely theoretical—like your combat effectiveness.",
 "You're the reason people aren't afraid of half-orcs anymore.",
-"Your dual nature is doubly disappointing."
+"Your dual nature is doubly disappointing.",
+"Your face looks like it lost a barfight with a belt sander.",
 ],
 
 human: [
@@ -837,7 +843,8 @@ human: [
 "You're living proof that evolution sometimes takes coffee breaks.",
 "Your short lifespan is a mercy to everyone else.",
 "You adapt to new situations by failing in innovative ways.",
-"You're the reason other races question the concept of equality."
+"You're the reason other races question the concept of equality.",
+"Congratulations, you invented imperialism and body odor.",
 ],
 
 tiefling: [
@@ -850,7 +857,8 @@ tiefling: [
 "You make devils reconsider their recruitment standards.",
 "Your fire resistance doesn't extend to resisting complete failure.",
 "You're the participation trophy of the infernal hierarchy.",
-"Your dark heritage is embarrassed to be associated with your bright incompetence."
+"Your dark heritage is embarrassed to be associated with your bright incompetence.",
+"All that edge and still no friends. Must be the sulfur breath.",
 ],
 
 warforged: [
