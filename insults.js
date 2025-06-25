@@ -1,7 +1,4 @@
 const insults = {
-  // Existing class categories remain untouched...
-
-  // Add full category support for all original sections
   classic: [
     "You're as sharp as a marble.",
     "Your wit's so slow, it takes you an hour to cook minute rice.",
