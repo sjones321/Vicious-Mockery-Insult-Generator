@@ -689,6 +689,7 @@ const insults = {
     "Your bolts are looser than your grip.",
     "You’re a pile of scrap pretending to be a warrior."
   ],
+  
   goliath: [
   "You’re about as useful as a burnt-out torch in the Blood War.",
   "Even the devils avoid your sorry excuse for a pact.",
@@ -701,6 +702,7 @@ const insults = {
   "You’re a footnote in the infernal bureaucracy.",
   "The legions of Avernus would rather face you than your insults."
   ],
+  
   aasimar: [
   "You’re about as useful as a burnt-out torch in the Blood War.",
   "Even the devils avoid your sorry excuse for a pact.",
